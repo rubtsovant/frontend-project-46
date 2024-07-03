@@ -10,11 +10,4 @@ const readFile = (filePath) => {
 
 const getExtension = (filePath) => filePath.split('.').at(-1);
 
-const parsers = (file, format) => {
-  if (format !== 'json') {
-    return JSON.parse(file);
-  }
-  return JSON.parse(file);
-};
-
-export { readFile, getExtension, parsers };
+export { readFile, getExtension };

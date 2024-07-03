@@ -1,4 +1,5 @@
-import { readFile, getExtension, parsers } from './utils.js';
+import { readFile, getExtension } from './utils.js';
+import parsers from './parsers.js';
 import getDiff from './diffTree.js';
 
 const genDiff = (filepath1, filepath2) => {
