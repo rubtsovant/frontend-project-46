@@ -1,4 +1,4 @@
-import { readFile, getExtension, parsers } from './utils.js';
+import { readFile, getExtension, parsers, getDiffObject } from './utils.js';
 
 const genDiff = (filepath1, filepath2) => {
   const file1 = readFile(filepath1);
@@ -7,8 +7,7 @@ const genDiff = (filepath1, filepath2) => {
   const file2Extension = getExtension(filepath2);
   const parseFile1 = parsers(file1, file1Extension);
   const parseFile2 = parsers(file2, file2Extension);
-  console.log(parseFile1);
-  console.log(parseFile2);
+  console.log(getDiffObject(parseFile1, parseFile2));
 };
 
 export { genDiff };
