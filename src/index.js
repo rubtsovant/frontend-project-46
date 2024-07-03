@@ -9,7 +9,7 @@ const genDiff = (filepath1, filepath2) => {
   const parseFile1 = parsers(file1, file1Extension);
   const parseFile2 = parsers(file2, file2Extension);
   const strGetDiff = JSON.stringify(getDiff(parseFile1, parseFile2));
-  console.log(strGetDiff)
+  console.log(strGetDiff);
   return strGetDiff;
 };
 
