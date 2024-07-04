@@ -2,7 +2,7 @@ import yaml from 'js-yaml';
 
 const parsers = (file, format) => {
   switch (format) {
-    case 'json': 
+    case 'json':
       return JSON.parse(file);
     case 'yml':
     case 'yaml':

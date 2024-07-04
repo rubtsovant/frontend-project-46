@@ -27,7 +27,7 @@ test('YML gendiff', () => {
 test('Wrong format gendiff', () => {
   const file1 = getFixturePath('file1.yml');
   const file2 = getFixturePath('file2.yml');
-  const expected = readFile(getFixturePath('result.txt'));
+  const expected = false;
 
-  expect(genDiff(file1, file2, 'txt')).toEqual(false);
+  expect(genDiff(file1, file2, 'txt')).toEqual(expected);
 });
