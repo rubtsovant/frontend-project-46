@@ -11,7 +11,6 @@ const genDiff = (filepath1, filepath2, format = 'stylish') => {
   const parseFile1 = parsers(file1, file1Extension);
   const parseFile2 = parsers(file2, file2Extension);
   const strGetDiff = makeDiff(parseFile1, parseFile2);
-  // console.log(formatter(strGetDiff, format));
   return formatter(strGetDiff, format);
 };
 
